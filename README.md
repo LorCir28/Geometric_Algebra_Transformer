@@ -4,6 +4,9 @@
 
 The "Geometric Transformers" project is dedicated to the development of a Transformer-based architecture designed specifically for handling geometric data. The primary objective is to create a model tailored for the classification of arteries, with a particular focus on identifying stenosis or bifurcation. To achieve this, the model needs to adeptly recognize crucial features in the input data and represent inputs, outputs, and hidden states within a projective geometric algebra framework.
 
+## Dataset
+The dataset is available at the following [**link**](https://drive.google.com/drive/folders/1sN_5UvsizXUybEw3PpSLkJTtWEoECkQh?usp=sharing)
+
 ## Objectives
 
 1. **Artery Classification**: The core goal of the project is to build a robust model capable of accurately classifying arteries based on the presence of stenosis or bifurcation.
@@ -39,15 +42,3 @@ To utilize the "Geometric Transformers" project, follow these steps:
 3. **Training**: Train the model using the provided training scripts. Adjust hyperparameters as needed.
 
 4. **Evaluation**: Evaluate the model's performance using the provided evaluation scripts and metrics.
-
-## Contributing
-
-We welcome contributions to enhance the capabilities and performance of the "Geometric Transformers" project. Please follow the guidelines outlined in the contribution documentation.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE), granting users the freedom to use, modify, and distribute the code.
-
-## Acknowledgments
-
-We acknowledge the support and contributions of the open-source community and express gratitude for any external libraries or tools utilized in this project.

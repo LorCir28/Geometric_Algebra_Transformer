@@ -1,0 +1,19 @@
+Possibili cigliegine che piacciono a Silvestri
+
+-Phase 1-
+Common objective: dataset knowledge
+
+1.1) EDA, analisi preliminare dei dati per giustificare preprocessing standard (controllare bilanciamento, grafici, ecc)
+1.2) Inclusione del software wandb di W&B (loss, accuracy, F1, confusion matrix, ROC curve, and other classification )
+1.3) Preprocess degli input
+
+-Phase 2-
+Common objective: architecture knowledge
+
+2.1) Implementation of embed in geometric algebra
+2.2) Implementation of Gatr
+	2.2.1) Implementation of equilinear (blue block)
+	2.2.2) Implementation of attention (red block)
+	2.2.3) Implementation of other blocks
+2.3) Implementation of extract from geometric algebra
+

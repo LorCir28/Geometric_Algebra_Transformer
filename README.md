@@ -2,7 +2,7 @@
 ![GAT Architecture](gat_architecture.png)
 ## Abstract
 
-The "Geometric Transformers" project is dedicated to the development of a Transformer-based architecture designed specifically for handling geometric data. The primary objective is to create a model tailored for the classification of arteries, with a particular focus on identifying stenosis or bifurcation. To achieve this, the model needs to adeptly recognize crucial features in the input data and represent inputs, outputs, and hidden states within a projective geometric algebra framework.
+This project is dedicated to the development of a Transformer-based architecture designed specifically for handling geometric data. The primary objective is to create a model tailored for the classification of arteries, with a particular focus on identifying stenosis or bifurcation. To achieve this, the model needs to adeptly recognize crucial features in the input data and represent inputs, outputs, and hidden states within a projective geometric algebra framework.
 
 ## Dataset
 The dataset is available at the following [**link**](https://drive.google.com/drive/folders/1sN_5UvsizXUybEw3PpSLkJTtWEoECkQh?usp=sharing)

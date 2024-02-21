@@ -1,4 +1,4 @@
-Now let's rapidly analyze the GAT'r architecture in depth.
+Now let's rapidly analyze the GAT'r architecture.
 
 The Equilinear layer processes multivectors, similarly to how a classical linear layer would do. However,a special feature is that each neuron in the equilinear layer is a multivectors. By doing so, a consistent linear mapping between input multivectors and neurons will be possible. This layer is the only one with learnable weights, as described in the paper.
 

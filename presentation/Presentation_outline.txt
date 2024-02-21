@@ -1,0 +1,21 @@
+Now let's rapidly analyze the GAT'r architecture in depth.
+
+The Equilinear layer processes multivectors, similarly to how a classical linear layer would do. However, some precautions are necessary to obtain a layer that is equivariant as well as linear. A first special feature is that each neuron in the equilinear layer is a multivector in turn. By doing so, a consistent linear mapping between input multivectors and neurons will be possible. This layer is the only one with learnable weights, as described in the paper.
+
+The Layer Normalization is very similar to its classical approach; however, due to the operations of geometric algebra, it retains an equivariant nature. This approach mitigates some possible uncontrolled growth in the gradient values. On the other hand, the opposite effect, the vanishing gradient, is controlled with residual connections.
+
+The Geometric Attention layer is similar to its classical version, only that the Q, K, and V elements are obtained through equilinear layers. The chosen attention approach is a multi-head multi-query type, so each Q, K, and V comes from a different layer.
+
+The Bilinear Geometric layer gives the network the ability to distinguish distances and learn binary geometric algebra operations.
+
+A GELU activation function of the scalar components of the multivector weighs the multivector itself.
+
+This network and the others with which the experiment where performed, were objects of a hyperparameter search, to get the best combination of them.
+
+------------------------------------------------------------------------------------
+
+The particularity of the GATr is its ability to be equivariant with respect to the operators of E(3), the rigid transformations of 3D space: rotations, translations, and reflections. This property is checked by that equation, for each layer f and for each operator.
+
+However, due to some imperfections, such as numerical approximations and too deep details in the geometric algebra, it is very unlikely that in our case the two sides of the equation will be equal. Hence the design choice is to analyze the distance between the two sides, considering ourselves satisfied if the distance between these two values is very low.
+
+In most cases, the results are good. This is a symptom of a network that preserves the equivariance property. Geometric Attention is the layer that performs worst. However, this could be associated with the fact that attention implemented, due to technical reasons, is the first version proposed by the paper, the one without distance awareness.
